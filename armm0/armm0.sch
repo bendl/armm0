@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:armm0-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -173,49 +174,49 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:LD1117S33TR_SOT223 U2
 U 1 1 5B61E64C
-P 4900 1000
-F 0 "U2" H 4900 1242 50  0000 C CNN
-F 1 "LD1117S33TR_SOT223" H 4900 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4900 1200 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5000 750 50  0001 C CNN
-	1    4900 1000
+P 5350 950
+F 0 "U2" H 5350 1192 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 5350 1101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5350 1150 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5450 700 50  0001 C CNN
+	1    5350 950 
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0108
 U 1 1 5B61EA0F
-P 5500 1000
-F 0 "#PWR0108" H 5500 850 50  0001 C CNN
-F 1 "+5V" H 5515 1173 50  0000 C CNN
-F 2 "" H 5500 1000 50  0001 C CNN
-F 3 "" H 5500 1000 50  0001 C CNN
-	1    5500 1000
+P 5950 950
+F 0 "#PWR0108" H 5950 800 50  0001 C CNN
+F 1 "+5V" H 5965 1123 50  0000 C CNN
+F 2 "" H 5950 950 50  0001 C CNN
+F 3 "" H 5950 950 50  0001 C CNN
+	1    5950 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 1000 5500 1000
+	5650 950  5950 950 
 $Comp
 L power:+3V3 #PWR0109
 U 1 1 5B61EC5D
-P 4300 1000
-F 0 "#PWR0109" H 4300 850 50  0001 C CNN
-F 1 "+3V3" H 4315 1173 50  0000 C CNN
-F 2 "" H 4300 1000 50  0001 C CNN
-F 3 "" H 4300 1000 50  0001 C CNN
-	1    4300 1000
+P 4750 950
+F 0 "#PWR0109" H 4750 800 50  0001 C CNN
+F 1 "+3V3" H 4765 1123 50  0000 C CNN
+F 2 "" H 4750 950 50  0001 C CNN
+F 3 "" H 4750 950 50  0001 C CNN
+	1    4750 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1000 4600 1000
+	4750 950  5050 950 
 $Comp
 L power:GND #PWR0110
 U 1 1 5B61ED16
-P 4900 1300
-F 0 "#PWR0110" H 4900 1050 50  0001 C CNN
-F 1 "GND" H 4905 1127 50  0000 C CNN
-F 2 "" H 4900 1300 50  0001 C CNN
-F 3 "" H 4900 1300 50  0001 C CNN
-	1    4900 1300
+P 5350 1250
+F 0 "#PWR0110" H 5350 1000 50  0001 C CNN
+F 1 "GND" H 5355 1077 50  0000 C CNN
+F 2 "" H 5350 1250 50  0001 C CNN
+F 3 "" H 5350 1250 50  0001 C CNN
+	1    5350 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -337,4 +338,28 @@ Text Notes 3000 1450 0    50   Italic 0
 ceramic
 Wire Wire Line
 	3100 3500 3100 3550
+Wire Notes Line width 12
+	4450 3850 950  3850
+Wire Notes Line width 12
+	950  3850 950  900 
+Wire Notes Line width 12
+	950  900  4450 900 
+Wire Notes Line width 12
+	4450 900  4450 3850
+Wire Notes Line width 12
+	5100 1850 6600 1850
+Wire Notes Line width 12
+	6600 1850 6600 3350
+Wire Notes Line width 12
+	6600 3350 5100 3350
+Wire Notes Line width 12
+	5100 3350 5100 1850
+Wire Notes Line width 12
+	7900 600  10750 600 
+Wire Notes Line width 12
+	10750 600  10750 3650
+Wire Notes Line width 12
+	10750 3650 7900 3650
+Wire Notes Line width 12
+	7900 3650 7900 600 
 $EndSCHEMATC

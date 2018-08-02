@@ -1,0 +1,7 @@
+//MPD-File
+#ifndef(pack_C1) #declare global_pack_C1=yes; object {CAP_SMD_CHIP_1206()translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<29.210000,0.000000,50.800000>translate<0,0.035000,0> }#end		//SMD Capacitor 1206 C1 100nF C1206
+#ifndef(pack_LEFT_HEADER) #declare global_pack_LEFT_HEADER=yes; object {CON_PH_2X24()translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<39.370000,0.000000,25.400000>}#end		//Header 2,54mm Grid 24Pin 2Row (jumper.lib) LEFT_HEADER  2X24
+#ifndef(pack_R1) #declare global_pack_R1=yes; object {RES_SMD_CHIP_1206("472",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<19.050000,0.000000,52.070000>translate<0,0.035000,0> }#end		//SMD Resistor 1206 R1 4.7k R1206
+#ifndef(pack_R2) #declare global_pack_R2=yes; object {RES_SMD_CHIP_1206("472",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<6.350000,0.000000,54.610000>translate<0,0.035000,0> }#end		//SMD Resistor 1206 R2 4.7k R1206
+#ifndef(pack_RIGHT_HEADER) #declare global_pack_RIGHT_HEADER=yes; object {CON_PH_2X24()translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<38.100000,0.000000,35.560000>}#end		//Header 2,54mm Grid 24Pin 2Row (jumper.lib) RIGHT_HEADER  2X24
+#ifndef(pack_U_2) #declare global_pack_U_2=yes; object {IC_SMD_TSSOP20("STM32F070F6","ST",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<8.890000,0.000000,72.390000>translate<0,0.035000,0> }#end		//TSSOP20 U$2 STM32F070F6 TSSOP20

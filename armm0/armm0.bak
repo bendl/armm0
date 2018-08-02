@@ -224,7 +224,7 @@ U 1 1 5B61EE49
 P 10000 2100
 F 0 "J3" H 10050 3417 50  0000 C CNN
 F 1 "Conn_02x24_Odd_Even" H 10050 3326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x24_P1.00mm_Vertical" H 10000 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x24_P2.54mm_Vertical" H 10000 2100 50  0001 C CNN
 F 3 "~" H 10000 2100 50  0001 C CNN
 	1    10000 2100
 	1    0    0    -1  
@@ -235,7 +235,7 @@ U 1 1 5B61EEC0
 P 8450 2100
 F 0 "J2" H 8500 3417 50  0000 C CNN
 F 1 "Conn_02x24_Odd_Even" H 8500 3326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x24_P1.00mm_Vertical" H 8450 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x24_P2.54mm_Vertical" H 8450 2100 50  0001 C CNN
 F 3 "~" H 8450 2100 50  0001 C CNN
 	1    8450 2100
 	1    0    0    -1  
