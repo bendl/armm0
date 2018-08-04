@@ -41,7 +41,7 @@ L Connector_Generic:Conn_02x10_Odd_Even J1
 U 1 1 5B61CEB8
 P 5750 2700
 F 0 "J1" H 5800 3317 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 5800 3226 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5850 3250 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 5750 2700 50  0001 C CNN
 F 3 "~" H 5750 2700 50  0001 C CNN
 	1    5750 2700
@@ -316,10 +316,6 @@ Wire Wire Line
 Connection ~ 2150 3100
 Wire Wire Line
 	2150 3100 1700 3100
-Text GLabel 6050 2500 2    50   Input ~ 0
-I2C1_SDA
-Text GLabel 6050 2600 2    50   Input ~ 0
-I2C1_SCL
 Text Notes 2850 1150 0    50   ~ 10
 STM32F070F6
 Text GLabel 3900 3000 2    50   Input ~ 0
@@ -330,9 +326,9 @@ Text GLabel 3900 3300 2    50   Input ~ 0
 SWCLK
 Text GLabel 3900 3200 2    50   Input ~ 0
 SWDIO
-Text GLabel 6050 2300 2    50   Input ~ 0
+Text GLabel 5550 2600 0    50   Input ~ 0
 SWDIO
-Text GLabel 6050 2400 2    50   Input ~ 0
+Text GLabel 5550 2700 0    50   Input ~ 0
 SWCLK
 Text Notes 3000 1450 0    50   Italic 0
 ceramic
@@ -346,14 +342,6 @@ Wire Notes Line width 12
 	950  900  4450 900 
 Wire Notes Line width 12
 	4450 900  4450 3850
-Wire Notes Line width 12
-	5100 1850 6600 1850
-Wire Notes Line width 12
-	6600 1850 6600 3350
-Wire Notes Line width 12
-	6600 3350 5100 3350
-Wire Notes Line width 12
-	5100 3350 5100 1850
 Wire Notes Line width 12
 	7900 600  10750 600 
 Wire Notes Line width 12
@@ -464,4 +452,106 @@ Wire Wire Line
 	9350 4300 9800 4300
 Wire Wire Line
 	10300 4300 10600 4300
+Text GLabel 9350 5350 0    50   Input ~ 0
+C9
+Text GLabel 9600 5250 2    50   Input ~ 0
+I2C1_SDA
+Wire Wire Line
+	9350 5350 9600 5350
+Text GLabel 9350 5250 0    50   Input ~ 0
+C7
+Text GLabel 9600 5350 2    50   Input ~ 0
+I2C1_SCL
+Wire Wire Line
+	9350 5250 9600 5250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B664D18
+P 5100 2300
+F 0 "#PWR?" H 5100 2150 50  0001 C CNN
+F 1 "+3.3V" H 5115 2473 50  0000 C CNN
+F 2 "" H 5100 2300 50  0001 C CNN
+F 3 "" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B6659EA
+P 6200 2400
+F 0 "#PWR?" H 6200 2150 50  0001 C CNN
+F 1 "GND" V 6205 2272 50  0000 R CNN
+F 2 "" H 6200 2400 50  0001 C CNN
+F 3 "" H 6200 2400 50  0001 C CNN
+	1    6200 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2400 6100 2400
+Wire Wire Line
+	6050 2500 6100 2500
+Wire Wire Line
+	6100 2500 6100 2400
+Connection ~ 6100 2400
+Wire Wire Line
+	6100 2400 6200 2400
+Wire Wire Line
+	6050 2600 6100 2600
+Wire Wire Line
+	6100 2600 6100 2500
+Connection ~ 6100 2500
+Wire Wire Line
+	6050 2700 6100 2700
+Wire Wire Line
+	6100 2700 6100 2600
+Connection ~ 6100 2600
+Wire Wire Line
+	6050 2800 6100 2800
+Wire Wire Line
+	6100 2800 6100 2700
+Connection ~ 6100 2700
+Wire Wire Line
+	6050 2900 6100 2900
+Wire Wire Line
+	6100 2900 6100 2800
+Connection ~ 6100 2800
+Wire Wire Line
+	6050 3000 6100 3000
+Wire Wire Line
+	6100 3000 6100 2900
+Connection ~ 6100 2900
+Wire Wire Line
+	6050 3100 6100 3100
+Wire Wire Line
+	6100 3100 6100 3000
+Connection ~ 6100 3000
+Wire Wire Line
+	6050 3200 6100 3200
+Wire Wire Line
+	6100 3200 6100 3100
+Connection ~ 6100 3100
+Text GLabel 5550 3000 0    50   Input ~ 0
+NRST
+NoConn ~ 5550 2800
+NoConn ~ 5550 3100
+Wire Wire Line
+	5100 2300 5100 3200
+Text GLabel 5550 2400 0    50   Input ~ 0
+JTAG_TRST
+Text GLabel 5550 2500 0    50   Input ~ 0
+JTAG_TDO
+Wire Wire Line
+	5100 3200 5550 3200
+Wire Wire Line
+	5100 2300 5550 2300
+Connection ~ 5100 2300
+Text GLabel 5550 2900 0    50   Input ~ 0
+JTAG_TDI
+Wire Wire Line
+	6050 2300 6050 2200
+Wire Wire Line
+	6050 2200 5550 2200
+Wire Wire Line
+	5550 2200 5550 2300
+Connection ~ 5550 2300
 $EndSCHEMATC
