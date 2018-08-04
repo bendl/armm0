@@ -400,17 +400,6 @@ F 3 "" H 9300 4450 50  0001 C CNN
 	1    9300 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5B65D7DC
-P 10550 4450
-F 0 "#PWR03" H 10550 4300 50  0001 C CNN
-F 1 "+3.3V" H 10565 4623 50  0000 C CNN
-F 2 "" H 10550 4450 50  0001 C CNN
-F 3 "" H 10550 4450 50  0001 C CNN
-	1    10550 4450
-	1    0    0    -1  
-$EndComp
 Text GLabel 9750 4150 0    50   Input ~ 0
 C0
 Text GLabel 10250 4150 2    50   Input ~ 0
@@ -439,8 +428,6 @@ Wire Wire Line
 	9450 4850 9750 4850
 Wire Wire Line
 	9300 4450 9750 4450
-Wire Wire Line
-	10250 4450 10550 4450
 Text GLabel 9750 5350 0    50   Input ~ 0
 C9
 Text GLabel 10000 5250 2    50   Input ~ 0
@@ -577,19 +564,6 @@ $EndComp
 Wire Wire Line
 	8700 4600 8950 4600
 $Comp
-L power:+3.3V #PWR0116
-U 1 1 5B67F6F6
-P 7850 4600
-F 0 "#PWR0116" H 7850 4450 50  0001 C CNN
-F 1 "+3.3V" H 7865 4773 50  0000 C CNN
-F 2 "" H 7850 4600 50  0001 C CNN
-F 3 "" H 7850 4600 50  0001 C CNN
-	1    7850 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 4600 8200 4600
-$Comp
 L power:+3.3V #PWR0117
 U 1 1 5B6804D1
 P 9000 4200
@@ -619,9 +593,9 @@ Text GLabel 8100 5200 0    50   Input ~ 0
 F0
 Text GLabel 8100 5300 0    50   Input ~ 0
 F2
-Text GLabel 8400 5200 2    50   Input ~ 0
+Text GLabel 8550 5200 2    50   Input ~ 0
 ADC_IN0
-Text GLabel 8400 5300 2    50   Input ~ 0
+Text GLabel 8550 5300 2    50   Input ~ 0
 ADC_IN1
 Wire Wire Line
 	8100 5200 8400 5200
@@ -649,9 +623,9 @@ Text GLabel 6800 4150 0    50   Input ~ 0
 USART1_TX
 Text GLabel 6800 4250 0    50   Input ~ 0
 USART1_RX
-Text GLabel 6800 4350 0    50   Input ~ 0
-I2C1_SDA
 Text GLabel 6800 4450 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 6800 4350 0    50   Input ~ 0
 I2C1_SCL
 $Comp
 L power:GND #PWR0119
@@ -877,4 +851,59 @@ Text GLabel 6750 1250 0    50   Input ~ 0
 BOARD_3V3
 Text Notes 6450 950  0    50   ~ 0
 Power source selector
+Text GLabel 8100 4600 0    50   Input ~ 0
+FPGA_3V3
+Text GLabel 10350 4450 2    50   Input ~ 0
+FPGA_3V3
+$Comp
+L power:+3V3 #PWR0116
+U 1 1 5B6BD2D4
+P 2450 4450
+F 0 "#PWR0116" H 2450 4300 50  0001 C CNN
+F 1 "+3V3" H 2465 4623 50  0000 C CNN
+F 2 "" H 2450 4450 50  0001 C CNN
+F 3 "" H 2450 4450 50  0001 C CNN
+	1    2450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0122
+U 1 1 5B6BD35C
+P 2750 4450
+F 0 "#PWR0122" H 2750 4300 50  0001 C CNN
+F 1 "+3V3" H 2765 4623 50  0000 C CNN
+F 2 "" H 2750 4450 50  0001 C CNN
+F 3 "" H 2750 4450 50  0001 C CNN
+	1    2750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0123
+U 1 1 5B6BD3EF
+P 3050 4450
+F 0 "#PWR0123" H 3050 4300 50  0001 C CNN
+F 1 "+3V3" H 3065 4623 50  0000 C CNN
+F 2 "" H 3050 4450 50  0001 C CNN
+F 3 "" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 5B6BD42C
+P 3350 4450
+F 0 "#PWR0124" H 3350 4300 50  0001 C CNN
+F 1 "+3V3" H 3365 4623 50  0000 C CNN
+F 2 "" H 3350 4450 50  0001 C CNN
+F 3 "" H 3350 4450 50  0001 C CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 2200
+NoConn ~ 3900 2300
+NoConn ~ 8400 5200
+NoConn ~ 8400 5300
+NoConn ~ 8300 4150
+NoConn ~ 8200 4600
+NoConn ~ 10250 4450
 $EndSCHEMATC
