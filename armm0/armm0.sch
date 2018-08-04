@@ -412,10 +412,6 @@ Text GLabel 10250 4250 2    50   Input ~ 0
 C3
 Text GLabel 10250 4350 2    50   Input ~ 0
 C5
-Text GLabel 10250 4550 2    50   Input ~ 0
-C7
-Text GLabel 10250 4650 2    50   Input ~ 0
-C9
 Text GLabel 10250 4750 2    50   Input ~ 0
 C11
 Text GLabel 9750 4550 0    50   Input ~ 0
@@ -428,18 +424,10 @@ Wire Wire Line
 	9450 4850 9750 4850
 Wire Wire Line
 	9300 4450 9750 4450
-Text GLabel 9750 5350 0    50   Input ~ 0
-C9
-Text GLabel 10000 5250 2    50   Input ~ 0
+Text GLabel 10250 4550 2    50   Input ~ 0
 I2C1_SDA
-Wire Wire Line
-	9750 5350 10000 5350
-Text GLabel 9750 5250 0    50   Input ~ 0
-C7
-Text GLabel 10000 5350 2    50   Input ~ 0
+Text GLabel 10250 4650 2    50   Input ~ 0
 I2C1_SCL
-Wire Wire Line
-	9750 5250 10000 5250
 $Comp
 L power:GND #PWR0114
 U 1 1 5B6659EA

@@ -623,9 +623,9 @@ Text GLabel 6800 4150 0    50   Input ~ 0
 USART1_TX
 Text GLabel 6800 4250 0    50   Input ~ 0
 USART1_RX
-Text GLabel 6800 4350 0    50   Input ~ 0
-I2C1_SDA
 Text GLabel 6800 4450 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 6800 4350 0    50   Input ~ 0
 I2C1_SCL
 $Comp
 L power:GND #PWR0119
