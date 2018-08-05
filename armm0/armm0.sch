@@ -827,13 +827,13 @@ Text GLabel 3900 2400 2    50   Input ~ 0
 LED_DBUG3
 Text GLabel 3900 2300 2    50   Input ~ 0
 LED_DBUG4
-Text GLabel 3250 4800 1    50   Input ~ 0
-LED_DBUG1
-Text GLabel 3550 4800 1    50   Input ~ 0
-LED_DBUG2
-Text GLabel 3850 4800 1    50   Input ~ 0
-LED_DBUG3
 Text GLabel 4150 4800 1    50   Input ~ 0
+LED_DBUG1
+Text GLabel 3850 4800 1    50   Input ~ 0
+LED_DBUG2
+Text GLabel 3550 4800 1    50   Input ~ 0
+LED_DBUG3
+Text GLabel 3250 4800 1    50   Input ~ 0
 LED_DBUG4
 $Comp
 L Device:R R5
